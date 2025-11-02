@@ -1,0 +1,7 @@
+# Exclude searxng-docker if it's not AI config related
+searxng-docker/
+
+# Add any sensitive files that shouldn't be shared
+*.log
+.env
+.env.*
