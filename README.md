@@ -10,11 +10,18 @@ One set of agents, three AI tools. Edit once in `shared/`, sync to all tools.
 make sync      # Generate configs for all tools
 ```
 
-Then configure with NixOS or symlinks (see `make install` output).
+Then configure symlinks to home directories, I make this using nix, but you can do manually:
+
+```bash
+symlink localcfg/.claude/ → ~/.claude
+```
+
+```
 
 ## Structure
 
 ```
+
 shared/
 ├── agents/     # 6 custom agents (edit these)
 ├── commands/   # Custom slash commands
@@ -24,6 +31,7 @@ localcfg/       # Generated (don't edit)
 ├── .claude/    # → ~/.claude
 ├── .copilot/   # → ~/.copilot
 └── .gemini/    # → ~/.gemini
+
 ```
 
 ## Custom Agents
