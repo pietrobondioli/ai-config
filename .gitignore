@@ -5,3 +5,8 @@ searxng-docker/
 *.log
 .env
 .env.*
+
+# Ignore everything in localcfg except .md files
+localcfg/**
+!localcfg/**/
+!localcfg/**/*.md
